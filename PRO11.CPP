@@ -1,0 +1,46 @@
+/* create a class employee with data member eid,ename,basic salary,pf and
+member function as getdata and display for employee details */
+
+#include<iostream.h>
+#include<conio.h>
+class employee
+{
+	public:
+	int eid,pf;
+	char *ename;
+	float bsalary;
+	int netsalary;
+
+
+
+void getdata()
+{
+ cout<<"\n enter a eid & ename & bsalary & pf";
+ cin>>eid>>ename>>bsalary>>pf;
+}
+
+void display()
+{
+netsalary=0;
+netsalary = bsalary-pf;
+
+cout<<"\n eid"<<eid;
+cout<<"\nename"<<ename;
+cout<<"\nbsalary"<<bsalary;
+cout<<"\npf"<<pf;
+cout<<"\nsaalary"<<netsalary;
+
+
+}
+};
+
+void main()
+{
+employee e1;
+clrscr();
+e1.getdata();
+e1.display();
+getch();
+}
+
+

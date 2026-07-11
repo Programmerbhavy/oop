@@ -1,0 +1,38 @@
+/*to create student class with data member rno,name
+and member function too display student details */
+
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+class student
+{
+	public:
+	//data members
+	int rno;
+	char *sname;
+
+	void getdata()
+	{
+	    cout<<"\n Enter rno & sname \n ";
+	    cin>>rno>>sname;
+
+	}
+	void display()
+	{
+	    cout<<"\n Roll no"<<rno;
+	    cout<<"\n Name "<<sname;
+	}
+};
+
+void main()
+{
+	//object
+	student obj1;
+	clrscr();
+
+	obj1.getdata();
+	obj1.display();
+
+	getch();
+
+}
