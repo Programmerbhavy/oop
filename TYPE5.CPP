@@ -28,7 +28,7 @@ class milisecond
         }
         void display()
         {
-            cout<<"\n Milileter to Meter "<<ms;
+            cout<<"\n Second to Milisecond "<<ms;
         }
     
 };
